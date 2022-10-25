@@ -23,6 +23,8 @@ else:
     # перевірка на адекватність
     if age < 1 or age > 125:
         print('Неадекватні дані')
+    elif same_digits:
+        print('Як цікаво!')
     elif age < 7:
         print("Де твої батьки?")
     elif age < 16:
@@ -30,7 +32,5 @@ else:
     elif age > 65:
         print("Покажіть пенсійне посвідчення!")
     # перевірка на дві однакові цифри
-    elif same_digits:
-        print('Як цікаво!')
     else:
         print("А білетів вже немає!")

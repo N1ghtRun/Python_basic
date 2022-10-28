@@ -24,7 +24,7 @@ while True:
 
 # Отримуємо символ
 while True:
-    symbol_number = input('Введіть номер символу: ')
+    symbol_number = input('Введіть номер символу (цифрами): ')
     if not symbol_number.isnumeric():
         print('Введені нечислові або нецілочисленні дані, або число з мінусом, спробуйте ще раз')
         continue
@@ -32,7 +32,7 @@ while True:
         print('Номер перевищую довжину слова, спробуйте ще раз')
         continue
     elif symbol_number == '0':
-        print('Введено нуль, спробуйте ще раз')
+        print('Нульового символу не існує, спробуйте ще раз')
     else:
         break
 
@@ -52,7 +52,7 @@ while True:
         break
 
 words_counter = words.count(' ')
-print(f"Строка складається із '{words_counter+1}' слів")
+print(f"Введена строка складається із '{words_counter+1}' слів")
 
 
 # Завдання 3

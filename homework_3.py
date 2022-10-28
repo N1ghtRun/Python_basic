@@ -65,3 +65,21 @@ for number in sample_list:
 
 print('Старий список:', sample_list)
 print('Новий список: ', result_list)
+
+
+"""
+
+3 questions (optional):
+    - what is the result of this course for me
+    Answer: Improvement of my programming skills
+    
+    - how I plane to use this result
+    Answer: I would like to plane f-16, that's a pretty nice plane
+    Answer2: I will use the result to earn money from it, but I see other benefits of this course, such as being in the
+    community, getting valuable experience from the teachers, brain training, having a good time in the process etc
+    
+    - what I am ready to sacrifice for the result
+    Answer: the most valuable thing that I have - my time. Also it's not a sacrifice in my opinion, more like an
+    investment.
+
+"""

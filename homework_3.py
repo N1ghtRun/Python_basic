@@ -75,7 +75,8 @@ print('Новий список: ', result_list)
     
     - how I plane to use this result
     Answer: I will use the result to earn money from it, but I see other benefits of this course, such as being in the
-    community, getting valuable experience from the teachers, brain training, having a good time in the process etc
+    community, getting valuable experience from the teachers, brain training, deeper understanding of IT in general, 
+    having a good time in the process etc
     
     - what I am ready to sacrifice for the result
     Answer: the most valuable thing that I have - my time. Also it's not a sacrifice in my opinion, more like an

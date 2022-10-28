@@ -22,7 +22,7 @@ while True:
     else:
         break
 
-# Отримуємо символ
+# Отримуємо номер символу
 while True:
     symbol_number = input('Введіть номер символу (цифрами): ')
     if not symbol_number.isnumeric():

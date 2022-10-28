@@ -74,8 +74,7 @@ print('Новий список: ', result_list)
     Answer: Improvement of my programming skills
     
     - how I plane to use this result
-    Answer: I would like to plane f-16, that's a pretty nice plane
-    Answer2: I will use the result to earn money from it, but I see other benefits of this course, such as being in the
+    Answer: I will use the result to earn money from it, but I see other benefits of this course, such as being in the
     community, getting valuable experience from the teachers, brain training, having a good time in the process etc
     
     - what I am ready to sacrifice for the result

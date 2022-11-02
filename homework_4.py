@@ -45,7 +45,7 @@ print(f"List with words that has 2 vowels in the row: {res_list}")
 
 
 # Task 2
-print("\nTask 2")
+print("\n\nTask 2")
 lower_limit = 35.9
 upper_limit = 37.339
 stores = {"cito": 47.999, "BB_studio": 42.999, "momo": 49.999, "main-service": 37.245, "buy.now": 38.324,

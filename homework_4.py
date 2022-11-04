@@ -18,16 +18,15 @@ while True:
         break
     else:
         print("String can't be empty!\n")
-        continue
 
+vowels = 'aeiuo'
 # Creating the list containing words from the input and which will be used in the cycle
-data_list = data_string.split(" ")
+data_list = data_string.split()
 # List which will contain words with 2 vowels in a row
 res_list = []
 counter = 0
 # variable for comparing symbols in the inner cycle
 previous_element = ' '
-vowels = 'aeiuo'
 # going through elements in the list
 for element in data_list:
     for symbol in element.lower():
@@ -57,6 +56,6 @@ for item in stores.items():
         match_list.append(item[0])
 
 if match_list:
-    print("Match:", ", ".join(i for i in match_list))
+    print("Match:", ", ".join(match_list))
 else:
     print("No matches!")

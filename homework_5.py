@@ -54,7 +54,6 @@ while True:
         if response.status_code // 100 == 4:
             print(f"Response status code: {response.status_code}")
             print("Most likely typo in the city name, try again. \n")
-            continue
         elif response.status_code // 100 == 5:
             print("Unable to get correct response from the server :(")
             print(f"Response status code: {response.status_code}")

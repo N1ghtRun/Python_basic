@@ -47,13 +47,13 @@ def age_input():
 # Функція для валідації вводу
 def age_validation():
     while True:
-        age = age_input()
+        age = age_input().lstrip('0')
         if not age.isnumeric():
             print('Можна використовувати тільки цілі цифри!\n')
         else:
             age_int = int(age)
             # перевірка на адекватність
-            if age_int < 1 or age_int > 125 or len(age) > 3:
+            if age_int < 1 or age_int > 125:
                 print('Неадекватні дані\n')
             else:
                 return age
@@ -61,14 +61,17 @@ def age_validation():
 
 # Функція для визначення форми слова "рік"
 def age_form_check(age):
+    result = ''
     if 10 < int(age[-2:]) < 20:
-        return "років"
+        result = "років"
     elif int(age[-1]) == 1:
-        return 'рік'
+        result = 'рік'
     elif 1 < int(age[-1]) < 5:
-        return 'роки'
+        result = 'роки'
     else:
-        return 'років'
+        result = 'років'
+
+    return result
 
 
 # Функція, яка виводить фінальне повідомлення

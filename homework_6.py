@@ -66,6 +66,8 @@ def print_message():
         print(f"Тобі ж {age}! Де твої батьки?\n")
     elif age_int < 16:
         print(f"Тобі лише {age}, а це фільм для дорослих!\n")
+    elif age_int > 65:
+        print(f"Вам {age}? Покажіть пенсійне посвідчення!\n")
     else:
         print(f"Незважаючи на те, що вам {age}, білетів всеодно нема!\n")
 

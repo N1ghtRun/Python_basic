@@ -8,8 +8,4 @@ import library
 
 print("\nGame of rock, scissors, paper, lizard, spock")
 
-while True:
-    library.game()
-    if not library.rematch_check():
-        print("Thanks for playing.")
-        break
+library.game()

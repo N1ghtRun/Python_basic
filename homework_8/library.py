@@ -91,17 +91,6 @@ def write_statistics(player_figure, ai_figure, winner):
         file.write(data)
 
 
-def game():
-    """
-    Main function
-    """
-    player_figure = get_player_figure()
-    ai_figure = get_ai_figure()
-    winner = define_winner(player_figure, ai_figure)
-    text_msg(player_figure, ai_figure, winner)
-    write_statistics(player_figure, ai_figure, winner)
-
-
 def rematch_check():
     """
     Returns:
@@ -116,3 +105,18 @@ def rematch_check():
             return False
         else:
             print("Wrong input")
+
+
+def game():
+    """
+    Main function
+    """
+    while True:
+        player_figure = get_player_figure()
+        ai_figure = get_ai_figure()
+        winner = define_winner(player_figure, ai_figure)
+        text_msg(player_figure, ai_figure, winner)
+        write_statistics(player_figure, ai_figure, winner)
+        if not rematch_check():
+            print("Thanks for playing.")
+            break

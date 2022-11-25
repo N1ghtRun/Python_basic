@@ -1,7 +1,6 @@
 from random import choice
 from os import stat
-from time import perf_counter
-
+from time import perf_counter, sleep
 
 rules = {
     'Rock': ('Scissors', 'Lizard'),
@@ -108,21 +107,21 @@ def rematch_check():
             print("Wrong input")
 
 
-def game_timer(function):
+def running_timer(function):
     """
-    prints time of the game
+    prints function running time
     """
-
-    def wrapper(*args):
+    def wrapper(*args, **kwargs):
         start_time = perf_counter()
-        function(*args)
-        print(f"Game time: {perf_counter() - start_time} seconds")
-        return function
+        result = function(*args, **kwargs)
+        print(f"Time: {perf_counter() - start_time} seconds")
+
+        return result
 
     return wrapper
 
 
-@game_timer
+@running_timer
 def game():
     """
     Main function

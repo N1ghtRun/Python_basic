@@ -17,5 +17,5 @@ def test_negative_number():
     assert exponent_multiplication(-2, 3, exponent=2) == 36, 'Not expected result'
 
 
-def test_type():
+def test_result_type():
     assert type(exponent_multiplication(2.5, 3, exponent=2)) in (int, float), 'Wrong type of result'

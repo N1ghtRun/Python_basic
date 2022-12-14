@@ -12,7 +12,7 @@ import library
 
 point1 = library.Point(0, 0)
 point2 = library.Point(3, 4)
-point3 = library.Point(-4, -5)
+point3 = library.Point(-10, -10)
 
 my_line = library.Line(point1, point2)
 my_triangle = library.Triangle(point1, point2, point3)
